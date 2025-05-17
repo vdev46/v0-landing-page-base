@@ -1,7 +1,8 @@
 "use client"
 
 import type React from "react"
-import { useEffect, useState, useId, useSearchParams } from "react"
+import { useEffect, useState, useId } from "react"
+import { useSearchParams } from "next/navigation"
 
 export default function RootLayoutClient({ children }: { children: React.ReactNode }) {
   const [mounted, setMounted] = useState(false)
